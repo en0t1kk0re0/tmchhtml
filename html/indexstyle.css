@@ -1,0 +1,97 @@
+*{
+    box-sizing:border-box;
+}
+h1{
+    font-size: 3rem;
+    animation-name: slide;
+    animation-duration: 2s;
+}
+@keyframes slide{
+    100%{transform: rotateZ(360deg)}
+    50%{opacity: 0;}
+}
+a{
+    color:rgb(255, 255, 255);
+}
+body{
+    background-image: url(images/b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+footer{
+    height: 50px;
+    background-color: pink;
+    padding-bottom: 60%;
+}
+#sosi{
+    display: block;
+    font-size:25px; 
+    background-color: palevioletred;
+    color:white;
+    border-radius:20px;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+}
+#sosi:hover{
+    background-color:cornflowerblue;
+    transform: scale(1.1);
+}
+*::selection{
+    background-color: pink;
+}
+.pagination{
+    text-align:center;
+}
+.pagination a{
+    color:black;
+    text-decoration: dashed;
+    padding: 8px 15px;
+    display: inline;
+    transition: border-radius 0.3s ease;
+}
+.pagination a.active{
+    background-color: pink;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.pagination a:hover:not(.active){
+    background-color: gray;
+    border-radius: 30px;
+}
+.dropdown button{
+    background-color: pink;
+    padding: 10px 20px;
+    border:none;
+    cursor: pointer;
+    transition: display 0.3s ease;
+}
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: display 0.9s ease;
+}
+.dropdown .Menu{
+display: none;
+position: absolute;
+background-color: pink;
+min-width: 100px;
+box-shadow: 2px 2px 5px black;
+}
+.dropdown:hover .Menu{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: rgb(255, 177, 190);
+}
+.dropdown a:hover{
+    background-color: rgb(255, 177, 190);
+}
+.dropdown{
+    display: inline-block;
+}
+i{
+    color: black;
+}

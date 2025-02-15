@@ -1,0 +1,26 @@
+body{
+    background-color:bisque;
+}
+a{
+    font-family:sans-serif;
+    font-size: large;
+    color: darkslategrey;
+}
+#hello{
+    color:black;
+    text-shadow: 3px 3px 5px;
+    font-family:Rubik Lines;
+    font-size: 5rem;
+    font-weight: 900;
+    font-variant:small-caps;
+    font-stretch: expanded;
+    text-align: center;
+    border-style: outset;
+    border-color: aliceblue;
+    border-radius:20px;
+    margin: 10px;
+    padding: 20px
+}
+div{
+    border: 2px solid;
+}
